@@ -23,7 +23,7 @@
 
             display: grid;
             grid-template-columns: 1fr 50% 1fr;
-            grid-template-rows: 1fr 300px 1fr;
+            grid-template-rows: 1fr 80% 1fr;
             grid-template-areas: "header header header" "navigation main sidebar" "footer footer footer";
         }
 
@@ -33,6 +33,12 @@
                 grid-template-rows: 1fr 1fr 50% 1fr;
 
                 grid-template-areas: "header header" "navigation navigation" "sidebar main" "footer footer";
+            }
+        }
+
+        @media screen and (max-width: 680px) {
+            .page {
+                display: block;
             }
         }
 
